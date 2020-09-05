@@ -30,7 +30,7 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # 1 univer
 showGameDesk()
 
-
+# 33333333333333333333333333333333
 
 showGameDesk()
 # привет
