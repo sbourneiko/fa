@@ -1,0 +1,41 @@
+def showGameDesk():
+    # вывод игрового поля
+    print("Игровое поле:")
+
+    print(" |", end="")
+    for i in range(len(GameDesk[0])):
+        print(f"{i}|", end="")
+    print()
+
+    for i in range(len(GameDesk)):
+        print(f"{i}|", end="")
+        for j in range(len(GameDesk[i])):
+            print(f"{GameDesk[i][j]}|", end="")
+        print()
+
+# объявляем список игроков
+Gamers = ["*", "+", "-"]
+
+# обявляем игровое поле как список
+# и заполняем список начальными данными
+GameDesk = [[" "] * 5 for i in range(4)]
+# GameDesk.append(['0', '0', '0', '0', '0'])
+# GameDesk.append(['0', '0', '0', '0', '0'])
+# GameDesk.append(['0', '0', '0', '0', '0'])
+# GameDesk.append(['0', '0', '0', '0', '0'])
+showGameDesk()
+
+# задаем ход
+# GameDesk[0][0] = 'x'
+# GameDesk[1][1] = 'x'
+# GameDesk[2][2] = 'x'
+# GameDesk[3][3] = 'x'
+# showGameDesk()
+
+i = 0
+while True:
+    for gamer in range(len(Gamers)):
+        print(f"Игрок {gamer+1}, вы ходите символом '{Gamers[gamer]}'")
+        (i, k) = input("Ваш ход (введите два числа):")
+        GameDesk[int(i)][int(k)] = Gamers[gamer]
+        showGameDesk()
