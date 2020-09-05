@@ -25,13 +25,6 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # GameDesk.append(['0', '0', '0', '0', '0'])
 showGameDesk()
 
-# задаем ход
-# GameDesk[0][0] = 'x'
-# GameDesk[1][1] = 'x'
-# GameDesk[2][2] = 'x'
-# GameDesk[3][3] = 'x'
-# showGameDesk()
-
 i = 0
 while True:
     for gamer in range(len(Gamers)):
