@@ -24,7 +24,11 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # GameDesk.append(['0', '0', '0', '0', '0'])
 # GameDesk.append(['0', '0', '0', '0', '0'])
 # elkrjklskfjskdfhjkjshf
+<<<<<<< HEAD
 # iz doma
+=======
+# ewrerewr
+>>>>>>> e62fd3b7c155438670c8015abcaa76678f47d459
 showGameDesk()
 
 i = 0
