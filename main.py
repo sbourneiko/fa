@@ -31,6 +31,7 @@ GameDesk = [[" "] * 5 for i in range(4)]
 showGameDesk()
 
 # 33333333333333333333333333333333
+# rewrewer
 
 showGameDesk()
 # привет
