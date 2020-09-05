@@ -27,8 +27,11 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # 32132
 # elkrjklskfjskdfhjkjshf
 # ewrwer
-showGameDesk()
 
+
+
+showGameDesk()
+# привет
 i = 0
 while True:
     for gamer in range(len(Gamers)):
