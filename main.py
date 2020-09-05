@@ -27,6 +27,8 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # 32132
 # elkrjklskfjskdfhjkjshf
 # ewrwer
+# 1 univer
+showGameDesk()
 
 
 
