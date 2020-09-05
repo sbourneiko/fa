@@ -26,6 +26,7 @@ GameDesk = [[" "] * 5 for i in range(4)]
 # wqeqweqwe
 # 32132
 # elkrjklskfjskdfhjkjshf
+# ewrwer
 <<<<<<< HEAD
 # iz doma
 =======
