@@ -6,7 +6,7 @@ GameDesk = [[" "] * 5 for i in range(4)]
 Gamers = ["*", "+", "-"]
 Penalties = [0 ,0, 0]
 
-def getPenalty(gamer, i, k):
+def getPenalty(gamer_idx, i, k):
     pen = 0
     print(locals())
     top = i - 1
@@ -16,10 +16,17 @@ def getPenalty(gamer, i, k):
 
     for y in range(top, bottom+1):
         for x in range(left, right+1):
-    # if GameDesk[i][k] == '223321':
-            print(f"Соседние ячеки ({y}, {x}) : {GameDesk[y][x]}")
-    #     pen += 1
-    return 666
+            if y >= len(GameDesk) or y < 0:
+                print(f"мы вышли за поле!!! y = {y} ")
+                continue
+            if x >= len(GameDesk[y]) or x < 0:
+                print(f"мы вышли за поле!!! x = {x} ")
+                continue
+
+            if GameDesk[y][x] == Gamers[gamer_idx]:
+                print(f"Соседние ячеки ({y}, {x}) : {GameDesk[y][x]}")
+                pen += 1
+    return (pen-1)
 
 def showGameDesk():
     # вывод игрового поля
@@ -35,7 +42,6 @@ def showGameDesk():
         for j in range(len(GameDesk[i])):
             print(f"{GameDesk[i][j]}|", end="")
         print()
-
 
 def inputPlayer(gamer):
     # запрос хода
